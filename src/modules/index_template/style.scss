@@ -1,0 +1,67 @@
+.first-section {
+    padding: {
+        top: 120px;
+        left: 134px;
+    };
+    background-image: url('./../images/first-section.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin: {
+            bottom: 50px;
+        };
+        font-family: "Acherus Feral Bold";
+        text-transform: uppercase;
+        color: $textWhite;
+    }
+
+    &__step-title {
+        margin: {
+            bottom: 15px;
+        };
+        font-size: 14px;
+        font-family: "Acherus Feral";
+        color: $textWhite;
+    }
+
+    .steps {
+        display: flex;
+        .step {
+            width: 200px;
+
+            &__number {
+                font-size: 109px;
+                font-family: "Acherus Feral";
+                color: $textWhite;
+            }
+
+            &__divider {
+                margin: {
+                    bottom: 15px;
+                };
+                height: 25px;
+                border-left: 1px solid #778891;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-family: "Acherus Feral";
+                color: $textWhite;
+            }
+
+            &__link {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.second-section {
+    background-color: #ebeef2;
+    
+    &__title {
+        color: #006abb;
+        font-family: "Acherus Feral Bold";
+    }
+}

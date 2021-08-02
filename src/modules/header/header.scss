@@ -1,2 +1,124 @@
 .header {
+    width: 100%;
+    padding: {
+        top: 45px;
+        left: 65px;
+        bottom: 45px;
+        right: 65px;
+    };
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:480px) {
+        padding: {
+            top: 45px;
+            left: 25px;
+            bottom: 45px;
+            right: 25px;
+        };
+    }
+    
+    &__col {
+        display: flex;
+    }
+
+    &__burger-icon {
+        margin: {
+            right: 5px;
+        };
+        cursor: pointer;
+    }
+
+    &__logo {
+
+    }
+
+    &__right,
+    &__left {
+        display: flex;
+        font-size: 16px;
+        font-family: "Acherus Feral";
+        color: $textWhite;
+    }
+
+    &__right {
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    &__email-phone {
+        text-align: right;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-family: "Acherus Feral";
+        color: $textWhite;
+        @media (max-width:768px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width:480px) {
+            font-size: 14px;
+        }
+    }
+
+    .nav {
+        height: 100vh;
+        padding: {
+            top: 45px;
+            right: 65px;
+            bottom: 65px;
+            left: 65px;
+        };
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: $textBlue;
+        @media (max-width:480px) {
+            width: 100%;
+        }
+
+        &-show {
+            display: block;
+        }
+
+        &__close-icon {
+            cursor: pointer;
+        }
+
+        &__list {
+            padding: {
+                top: 79px;
+            };
+        }
+
+        &__item {
+            margin: {
+                bottom: 10px;
+            };
+
+            &:hover .nav__link {
+                text-decoration: underline;
+            }
+        }
+
+        &__link {
+            font-size: 26px;
+            font-family: "Acherus Feral Bold";
+            color: $textWhite;
+        }
+    }
 }

@@ -10,9 +10,9 @@
     @@include("./../head/head.html")
 </head>
 <body class="site-wrapper">
-    @@include("./../header/header.html")
     <main>
-        <section class="section">
+        @@include("./../header/header.html")
+        <section>
             <div class="first-section">
                 <h2 class="first-section__title">
                     ZEPTER ONLINE - продюсерский центр<br>
@@ -74,7 +74,7 @@
                 </h2>
             </div>
         </section>
-        <section class="section third-section">
+        <section class="third-section" id="third-section">
             <h1 class="third-section__title">
                 Zepter Online<br>
                 это
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="section fourth-section">
+        <section class="fourth-section" id="fourth-section">
             <h1 class="fourth-section__title">об обучении</h1>
             <div class="fourth-section__info">
                 <p class="fourth-section__text">
@@ -156,7 +156,7 @@
                         Вы изучите техники продаж. Документооборот компании Zepter.
                     </p>
                 </div>
-                <div class="fourth-section__unit">
+                <div class="fourth-section__unit" style="background-color: #fc6801; cursor: pointer;">
                     <span class="unit__title">Урок 4</span>
                     <p class="unit__text">
                         Вы узнаете как продвигать личный бренд онлайн. Научитесь самостоятельно настраивать рекламные компании и формировать
@@ -185,25 +185,55 @@
                 в компании.
             </p>
         </section>
-        <section class="staff-section">
+        <section class="staff-section" id="staff-section">
             <h1 class="staff-section__title">Преподаватели</h1>
             <div class="staff-section__items">
                 <div class="staff-section__item">
-                    <img class="staff-section__img" src="./images/staff.png" alt="Фото сотрудника" width="320" height="470">
+                    <img class="staff-section__img" src="./images/SashaIarovikov.jpg" alt="Фото сотрудника" width="320" height="470">
                     <p class="staff-section__name">Александр<br>Яровиков</p>
-                    <div class="staff-section__position">Сотрудник</div>
+                    <div class="staff-section__position">Тренинг менеджер<br>Руководитель компании blnc</div>
                 </div>
                 <div class="staff-section__item">
-                    <img class="staff-section__img" src="./images/staff.png" alt="Фото сотрудника" width="320" height="470">
-                    <p class="staff-section__name">Александр<br>Яровиков</p>
-                    <div class="staff-section__position">Сотрудник</div>
+                    <img class="staff-section__img" src="./images/kanc.jpg" alt="Фото сотрудника" width="320" height="470">
+                    <p class="staff-section__name">Александра<br>Канц</p>
+                    <div class="staff-section__position">Тренинг менеджер<br>Маркетолог компании blnc</div>
                 </div>
                 <div class="staff-section__item">
-                    <img class="staff-section__img" src="./images/staff.png" alt="Фото сотрудника" width="320" height="470">
-                    <p class="staff-section__name">Александр<br>Яровиков</p>
-                    <div class="staff-section__position">Сотрудник</div>
+                    <img class="staff-section__img" src="./images/AlinaFilipova.png" alt="Фото сотрудника" width="320" height="470">
+                    <p class="staff-section__name">Алина<br>Филипова</p>
+                    <div class="staff-section__position">Исполнительный директор<br>по продажам и маркетингу</div>
+                </div>
+                <div class="staff-section__item">
+                    <img class="staff-section__img" src="./images/AlinaMursalimova.jpg" alt="Фото сотрудника" width="320" height="470">
+                    <p class="staff-section__name">Алина<br>Мурсалимова</p>
+                    <div class="staff-section__position">Национальные тренинг-менеджеры</div>
+                </div>
+                <div class="staff-section__item">
+                    <img class="staff-section__img" src="./images/ElenaBarinova.png" alt="Фото сотрудника" width="320" height="470">
+                    <p class="staff-section__name">Елена<br>Баринова</p>
+                    <div class="staff-section__position">Национальные тренинг-менеджеры</div>
                 </div>
             </div>
+        </section>
+        <section class="production-section" id="production-section">
+            <h1 class="production-section__title">Продукция</h1>
+            <div class="production-section__list">
+                <div class="production-section__box">
+                    <a href="https://www.zepter.ru/categories/quanomed-zepter" class="production-section__link" target="_blank">Умная система сна</a>
+                    <a href="https://www.zepter.ru/categories/healthy-air" class="production-section__link" target="_blank">Чистый воздух</a>
+                    <a href="https://www.zepter.ru/categories/clean-water" class="production-section__link" target="_blank">Чистая вода</a>
+                    <a href="https://www.zepter.ru/categories/clean-home " class="production-section__link" target="_blank">Чистый дом</a>
+                </div>
+                <div class="production-section__box">
+                    <a href="https://www.zepter.ru/categories/healthy-cooking" class="production-section__link" target="_blank">Здоровое приготовление</a>
+                    <a href="https://www.zepter.ru/categories/the-tesla-eyewear" class="production-section__link" target="_blank">Очки ZEPTER HYPERLIGHT®</a>
+                    <a href="https://www.zepter.ru/categories/light-therapy " class="production-section__link" target="_blank">Светотерапия. Биоптрон</a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-section" id="contacts-section">
+            <h1 class="contacts-section__title">Контакты</h1>
+            <a href="#" class="contacts-section__link">Стать консультантом</a>
         </section>
     </main>
     @@include("./../footer/footer.html")

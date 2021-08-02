@@ -1,2 +1,63 @@
 .footer {
+    padding: 45px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width:768px) {
+        justify-content: center;
+    }
+
+    &__logo {
+        margin: {
+            bottom: 25px;
+        };
+    }
+
+    &__address {
+        margin: {
+            bottom: 50px;
+        };
+        font-size: 16px;
+        font-family: "Acherus Feral";
+        color: $textBlue;
+    }
+
+    &__phone-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__phone-logo {
+        margin: {
+            right: 10px;
+        };
+    }
+
+    &__phone-number {
+        font-size: 32px;
+        font-family: "Acherus Feral";
+        color: $textBlue;
+    }
+
+    &__phone-description,
+    &__blnc {
+        margin: {
+            left: 20px;
+        };
+        font-size: 14px;
+        font-family: "Acherus Feral";
+    }
+
+    &__phone-description {
+        margin: {
+            bottom: 50px;
+        };
+        color: $textBlue;
+    }
+
+    &__blnc {
+        display: inline-block;
+        color: $textOrange;
+    }
 }

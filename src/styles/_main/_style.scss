@@ -10,10 +10,22 @@ a {
 }
 
 .site-wrapper {
-    max-width: 1400px;
+    max-width: 1270px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 84px;
+    font-family: "Acherus Feral Bold";
+    text-transform: uppercase;
+    @media (max-width:768px) {
+        font-size: 42px;
+    }
 }
 
 h2 {
     font-size: 42px;
+    @media (max-width:768px) {
+        font-size: 21px;
+    }
 }

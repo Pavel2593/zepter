@@ -1,4 +1,3 @@
-console.log('header');
 $(document).ready(function () {
     var burgerIcon = $('.header .header__burger-icon');
     var closeIcon = $('.header .nav__close-icon');

@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+	<title>Layer 1</title>
+	<defs>
+		<image width="13" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAAXNSR0IArs4c6QAAAL9JREFUKFON0rENglAQgOH/IFq7iboBNNq6gbSSmOgEMoJWlOoIdkqjTqAjMAI1Ec48opiICFe95O579+7lBBN+dEHR4twUwlJeqB0wxZa43yhBOKBMaxtWkKpHON4zi84Izk9YRTiEoyt+tAW8lkjXaL7Bsm9Arx2CBLEHaOYCpls1fnyEKbrzEIcuQ3Kd0O0EpOkCZFXcUINMKkbxivlMzI99MuvehN7PMjhGGJQz/ulUvxcfdAqatqfM5/nuCTymSqYkP5bfAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Layer 1">
+		<use id="&lt;Compound Path&gt;" href="#img1" transform="matrix(1,0,0,1,-1,0)"/>
+	</g>
+</svg>

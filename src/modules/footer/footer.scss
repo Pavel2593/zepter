@@ -42,9 +42,6 @@
 
     &__phone-description,
     &__blnc {
-        margin: {
-            left: 20px;
-        };
         font-size: 14px;
         font-family: "Acherus Feral";
     }
@@ -54,6 +51,10 @@
             bottom: 50px;
         };
         color: $textBlue;
+
+        & a { 
+            color: $textBlue;
+        }
     }
 
     &__blnc {

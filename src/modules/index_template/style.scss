@@ -61,6 +61,7 @@
 
             &__link {
                 text-decoration: underline;
+                cursor: pointer;
             }
         }
     }
@@ -405,5 +406,6 @@
         font-family: "Acherus Feral";
         color: $textOrange;
         text-decoration: underline;
+        cursor: pointer;
     }
 }

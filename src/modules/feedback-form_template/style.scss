@@ -1,0 +1,91 @@
+.feedback {
+    &-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        &-show {
+            display: block;
+        }
+    }
+
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        &__close-icon {
+            display: flex;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+
+        &__title {
+            margin: {
+                bottom: 30px
+            };
+            font-size: 24px;
+            font-family: "Acherus Feral Bold";
+            color: $textBlue;
+        }
+
+        &__subtitle {
+            margin:  {
+                bottom: 10px;
+            };
+            font-size: 14px;
+            font-family: "Acherus Feral Bold";
+            color: $textBlue;
+        }
+
+        &__input {
+            margin: {
+                bottom: 20px;
+            };
+            padding: 10px 20px;
+            border: 1px solid $textBlue;
+            border-radius: 5px;
+
+            font-size: 14px;
+            font-family: "Acherus Feral Bold";
+            color: $textBlue;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__btn {
+            &-wrapper {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-family: "Acherus Feral Bold";
+            text-transform: uppercase;
+            background-color: $textBlue;
+            color: $textWhite;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

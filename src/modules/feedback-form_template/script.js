@@ -47,6 +47,5 @@ $(document).ready(function () {
                 formBtnWrapper.html(newData.message);
             }
         });
-
     });
 });

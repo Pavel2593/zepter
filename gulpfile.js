@@ -17,6 +17,10 @@ const htmlPath = [
     './src/views/**/*.html',
 ];
 
+const phpPath = [
+    './src/*.php',
+];
+
 const stylesPath = [
     './src/styles/**/*.scss'
 ];
@@ -47,6 +51,11 @@ function html() {
     }))
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.stream());
+}
+
+function php() {
+    return gulp.src(phpPath)
+    .pipe(gulp.dest('./build'))
 }
 
 function styles() {
@@ -98,6 +107,7 @@ function watch() {
 }
 
 gulp.task('html', html);
+gulp.task('php', php);
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('lib', lib);
@@ -111,6 +121,7 @@ gulp.task(
         clean,
         gulp.parallel(
             html,
+            php,
             styles,
             scripts,
             lib,

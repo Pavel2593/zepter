@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var linkPopupHeader = $('.header .header__link');
     var linkPopupFirst = $('.contacts-section__link');
-    var linkPopupSecond = $('.step__link');
+    var linkPopupSecond = $('.step__popup-link');
     var popupWrapper = $('.feedback-wrapper');
     var popup = $('.feedback');
     var popupCloseIcon = popupWrapper.find('.form__close-icon');

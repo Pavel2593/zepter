@@ -19,7 +19,17 @@
                     консультантов компании<br>
                     ZEPTER
                 </h2>
-                <p class="first-section__step-title">
+                <h2 class="first-section__text">
+                    Жить интересную жизнь<br>
+                    Стать брендом<br>
+                    Быть лучше<br>
+                    Расти осознанно<br>
+                    Позволять событиям случаться<br>
+                    Вместе с Zepter Online
+                </h2>
+            </div>
+            <div class="second-section">
+                <p class="second-section__step-title">
                     4 шага<br>
                     в Zepter Online:
                 </p>
@@ -30,7 +40,7 @@
                         <p class="step__text">
                             Оставляете<br>
                             заявку -<br>
-                            <p class="step__link step__popup-link">оставить заявку</p>
+                        <p class="step__link step__popup-link">оставить заявку</p>
                         </p>
                     </div>
                     <div class="step">
@@ -62,16 +72,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="second-section">
-                <h2 class="second-section__title">
-                    Помните,<br>
-                    Вы - это не ваш план продаж,<br>
-                    вы - это не ваше место в общем<br>
-                    рейтинге компании, вы Личность<br>
-                    с талантами, которые мы<br>
-                    поможем раскрыть.
-                </h2>
             </div>
         </section>
         <section class="third-section" id="third-section">
@@ -122,7 +122,7 @@
             </div>
         </section>
         <section class="fourth-section" id="fourth-section">
-            <h1 class="fourth-section__title">об обучении</h1>
+            <h1 class="fourth-section__title">ЧЕМУ ВЫ НАУЧИТЕСЬ</h1>
             <div class="fourth-section__info">
                 <p class="fourth-section__text">
                     Онлайн - интенсив продюсерского
@@ -206,21 +206,21 @@
                 <div class="staff-section__item">
                     <img class="staff-section__img" src="./images/AlinaMursalimova.jpg" alt="Фото сотрудника" width="320" height="470">
                     <p class="staff-section__name">Алина<br>Мурсалимова</p>
-                    <div class="staff-section__position">Национальный тренинг-менеджеры<br>компании Zepter.</div>
+                    <div class="staff-section__position">Национальный тренинг-менеджер<br>компании Zepter.</div>
                 </div>
                 <div class="staff-section__item">
                     <img class="staff-section__img" src="./images/ElenaBarinova.png" alt="Фото сотрудника" width="320" height="470">
                     <p class="staff-section__name">Елена<br>Баринова</p>
-                    <div class="staff-section__position">Национальный тренинг-менеджеры<br>компании Zepter.</div>
+                    <div class="staff-section__position">Национальный тренинг-менеджер<br>компании Zepter.</div>
                 </div>
                 <div class="staff-section__item">
                     <img class="staff-section__img" src="./images/AnnaZaporozhan.jpg" alt="Фото сотрудника" width="320" height="470">
                     <p class="staff-section__name">Анна<br>Запорожан</p>
-                    <div class="staff-section__position">Национальный тренинг-менеджеры<br>компании Zepter.</div>
+                    <div class="staff-section__position">Национальный тренинг-менеджер<br>компании Zepter.</div>
                 </div>
             </div>
         </section>
-        <section class="production-section" id="production-section">
+        <!-- <section class="production-section" id="production-section">
             <h1 class="production-section__title">Продукция</h1>
             <div class="production-section__list">
                 <div class="production-section__box">
@@ -235,7 +235,7 @@
                     <a href="https://www.zepter.ru/categories/light-therapy " class="production-section__link" target="_blank">Светотерапия. Биоптрон</a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="reviews-section" id="reviews-section">
             <h1 class="reviews-section__title">Отзывы</h1>
             <div class="reviews-section__container">
@@ -253,14 +253,30 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
+                <div class="video__wrapper">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dW0MkHvxsyA" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="dorn-section">
+            <video width="400" height="300" controls="controls" poster="video/duel.jpg" class="dorn-section__video">
+                <source src="video/dorn.mp4" type='video/mp4;'>
+            </video>
+            <div class="dorn-section__info-wrapper">
+                <p class="dorn-section__title">Иван Дорн уже пользуется!</p>
+                <a href="#" class="dorn-section__btn">Хочу как Дорн</a>
             </div>
-            
+
         </section>
         <section class="contacts-section" id="contacts-section">
             <h1 class="contacts-section__title">Контакты</h1>
-            <p class="contacts-section__link">Стать консультантом</p>
+            @@include("./../feedback-form_template/template.html")
+            <!-- <p class="contacts-section__link">Стать консультантом</p> -->
         </section>
     </main>
-    @@include("./../feedback-form_template/template.html")
     @@include("./../footer/footer.html")
 </body>

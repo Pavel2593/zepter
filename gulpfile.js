@@ -21,6 +21,10 @@ const phpPath = [
     './src/*.php',
 ];
 
+const videoPath = [
+    './src/video/*',
+];
+
 const stylesPath = [
     './src/styles/**/*.scss'
 ];
@@ -51,6 +55,11 @@ function html() {
     }))
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.stream());
+}
+
+function video() {
+    return gulp.src(videoPath)
+        .pipe(gulp.dest('./build/video'))
 }
 
 function php() {
@@ -107,6 +116,7 @@ function watch() {
 }
 
 gulp.task('html', html);
+gulp.task('video', video);
 gulp.task('php', php);
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
@@ -121,6 +131,7 @@ gulp.task(
         clean,
         gulp.parallel(
             html,
+            video,
             php,
             styles,
             scripts,

@@ -18,13 +18,34 @@
         color: $textWhite;
     }
 
+    &__text {
+        color: $textWhite;
+        font-family: "Acherus Feral Bold";
+        // text-transform: uppercase;
+    }
+}
+
+.second-section {
+    padding: {
+        top: 50px;
+        right: 25px;
+        bottom: 90px;
+        left: 65px;
+
+    };
+
+    @media (max-width:480px) {
+        
+    }
+    background-color: #ebeef2;
+
     &__step-title {
         margin: {
             bottom: 15px;
         };
         font-size: 14px;
         font-family: "Acherus Feral";
-        color: $textWhite;
+        color: $textBlue;
     }
 
     .steps {
@@ -42,7 +63,7 @@
             &__number {
                 font-size: 109px;
                 font-family: "Acherus Feral";
-                color: $textWhite;
+                color: $textBlue;
             }
 
             &__divider {
@@ -56,37 +77,16 @@
             &__text {
                 font-size: 14px;
                 font-family: "Acherus Feral";
-                color: $textWhite;
+                color: $textBlue;
             }
 
             &__link {
                 text-decoration: underline;
                 font-family: "Acherus Feral";
-                color: $textWhite;
+                color: $textBlue;
                 cursor: pointer;
             }
         }
-    }
-}
-
-.second-section {
-    padding: {
-        top: 50px;
-        right: 25px;
-        bottom: 90px;
-        left: 65px;
-
-    };
-
-    @media (max-width:480px) {
-        
-    }
-    background-color: #ebeef2;
-    
-    &__title {
-        color: #006abb;
-        font-family: "Acherus Feral Bold";
-        text-transform: uppercase;
     }
 }
 
@@ -437,6 +437,37 @@
 
 .test {
     width: 500px;
+}
+
+.dorn-section {
+    display: flex;
+    justify-content: space-between;
+
+    &__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin: {
+            bottom: 25px
+        };
+        font-size: 26px;
+        font-family: "Acherus Feral Bold";
+        color: $textBlue;
+    }
+
+    &__btn {
+        padding: 15px 30px;
+        display: inline-block;
+        font-size: 18px;
+        font-family: "Acherus Feral";
+        border-radius: 25px;
+        background-color: $textOrange;
+        color: $textWhite;
+    }
 }
 
 .contacts-section {
